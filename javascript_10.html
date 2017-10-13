@@ -2,7 +2,24 @@
 <html>
 <head>
     <script type="text/javascript">
-      console.log(!!0); // false
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+
+
+<script type="text/javascript">
+
+
+
+
+   console.log(!!0); // false
       console.log(!!1); // true
       console.log(!!'string'); // true
       console.log(!!'true'); // true
@@ -30,7 +47,12 @@
       console.log(!!![]); // false
       console.log(!!![1, 2, 3]); // false
 
-    </script>
+
+
+
+
+
+ </script>
 </head>
 <body>
 </body>

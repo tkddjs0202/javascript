@@ -1,15 +1,39 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<script type="text/javascript">
+<head>
+    <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+
+
+<script type="text/javascript">
+
+
+
+
 var a = "현재 시간은 " ;
 var b = 1;
 var c = 2;
 var d = "시입니다.";
 var sum = a + b + c + d ;
 console.log(sum);
-	</script>
-	<body></body>
 
+
+
+
+
+
+
+ </script>
+</head>
+<body>
+</body>
 </html>
-
-

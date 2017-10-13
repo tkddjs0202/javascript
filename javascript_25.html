@@ -2,7 +2,21 @@
 <html>
 <head>
     <script type="text/javascript">
-      var a = parseInt("10");
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+
+
+<script type="text/javascript">
+
+       var a = parseInt("10");
       var b = parseInt("10.3");
       var c = parseInt("10 20 30");
       var d = parseInt("10 years");
@@ -11,8 +25,8 @@
       console.log(typeof(b) + " : " + b); // number : 10
       console.log(typeof(c) + " : " + c); // number : 10
       console.log(typeof(d) + " : " + d); // number : 10
-      console.log(typeof(e) + " : " + e); // number : NaN          
-    </script>
+      console.log(typeof(e) + " : " + e); // number : NaN        
+ </script>
 </head>
 <body>
 </body>

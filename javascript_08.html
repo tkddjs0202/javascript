@@ -1,5 +1,24 @@
-<!DOCTYPE html>
-	<script type="text/javascript">
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+
+
+<script type="text/javascript">
+
+
+
+
 console.log(true&&false);
 console.log(true&&true);
 console.log("string"&&true);
@@ -15,7 +34,13 @@ console.log(null&&"");
 console.log(null&&false);
 console.log("yes"&&"no");
 
-	</script>
-	<body></body>
 
+
+
+
+
+ </script>
+</head>
+<body>
+</body>
 </html>

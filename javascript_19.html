@@ -2,6 +2,20 @@
 <html>
 <head>
     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+
+
+<script type="text/javascript">
+
       var x = 10;
       var a = String(x)
       var b = String(123);
@@ -9,7 +23,9 @@
       console.log(typeof(a) + " : " + a); // string : 10
       console.log(typeof(b) + " : " + b); // string : 123
       console.log(typeof(c) + " : " + c); // string : 123
-    </script>
+
+
+ </script>
 </head>
 <body>
 </body>
