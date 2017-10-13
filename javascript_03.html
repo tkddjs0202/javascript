@@ -1,6 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-	<script type="text/javascript">
+<head>
+    <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+
 var language="javascript";
 
 console.log(language[0]);
@@ -15,6 +35,7 @@ language[3] = 'D';
 console.log(language);
 
 
+<<<<<<< HEAD
 	</script>
 	<body>
 <div>
@@ -50,4 +71,16 @@ console.log(language);
 
 </body>
 </html>
+=======
+>>>>>>> accefd929cbc9ec5652f70291bac5dc890d6c694
 
+
+
+
+
+
+ </script>
+</head>
+<body>
+</body>
+</html>

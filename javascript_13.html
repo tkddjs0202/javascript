@@ -1,11 +1,33 @@
 ﻿<!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 	<script type="text/javascript">
 
 
 
 
 var day;
+=======
+<head>
+    <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+
+
+<script type="text/javascript">
+
+
+
+ var day;
+>>>>>>> accefd929cbc9ec5652f70291bac5dc890d6c694
       switch (new Date().getDay()) {
           case 0:
               day = "Sunday";
@@ -33,6 +55,7 @@ var day;
 
 
 
+<<<<<<< HEAD
 	</script>
 	<body>
 <div>
@@ -78,6 +101,12 @@ var day;
         <ul id="log" style="list-style-type:circle"></ul>
     </div>    
 
+=======
+
+ </script>
+</head>
+<body>
+>>>>>>> accefd929cbc9ec5652f70291bac5dc890d6c694
 </body>
 </html>
 

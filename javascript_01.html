@@ -2,6 +2,7 @@
 <html>
 <head>
     <script type="text/javascript">
+<<<<<<< HEAD
     var byteValue = 100;
     var shortValue = 30000;
     var intValue = 1000000000;
@@ -34,6 +35,56 @@
     console.log(typeof stringValue);
     console.log(typeof nullValue);
     console.log(typeof undefinedValue);
+=======
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+            //
+            // 자바스크립트 코드를 이쪽으로 옮김.
+            //
+            var byteValue = 100;
+            var shortValue = 30000;
+            var intValue = 1000000000;
+            var longValue = 9000000000000000000;
+            var floatValue = 44.77;
+            var doubleValue = 64.7735;
+            var boolValue = true;
+            var stringValue = 'javascript';
+            var nullValue = null;
+            var undefinedValue;
+
+            console.log(byteValue);
+            console.log(shortValue);
+            console.log(intValue);
+            console.log(longValue);
+            console.log(floatValue);
+            console.log(doubleValue);
+            console.log(boolValue);
+            console.log(stringValue);
+            console.log(nullValue);
+            console.log(undefinedValue);    
+
+            console.log(typeof byteValue);
+            console.log(typeof shortValue);
+            console.log(typeof intValue);
+            console.log(typeof longValue);
+            console.log(typeof floatValue);
+            console.log(typeof doubleValue);
+            console.log(typeof boolValue);
+            console.log(typeof stringValue);
+            console.log(typeof nullValue);
+            console.log(typeof undefinedValue);
+
+        }
+    }
+>>>>>>> accefd929cbc9ec5652f70291bac5dc890d6c694
     </script>
 </head>
 <body>

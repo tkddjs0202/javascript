@@ -1,11 +1,31 @@
 ﻿<!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 	<script type="text/javascript">
 
 
 
 
       var a = parseFloat("10");
+=======
+<head>
+    <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+
+
+<script type="text/javascript">
+
+var a = parseFloat("10");
+>>>>>>> accefd929cbc9ec5652f70291bac5dc890d6c694
       var b = parseFloat("10.3");
       var c = parseFloat("10 20 30");
       var d = parseFloat("10 years");
@@ -14,6 +34,7 @@
       console.log(typeof(b) + " : " + b); // number : 10.3
       console.log(typeof(c) + " : " + c); // number : 10
       console.log(typeof(d) + " : " + d); // number : 10
+<<<<<<< HEAD
       console.log(typeof(e) + " : " + e); // number : NaN
 
 
@@ -47,6 +68,12 @@
         <ul id="log" style="list-style-type:circle"></ul>
     </div>    
 
+=======
+      console.log(typeof(e) + " : " + e); // number : NaN        
+ </script>
+</head>
+<body>
+>>>>>>> accefd929cbc9ec5652f70291bac5dc890d6c694
 </body>
 </html>
 

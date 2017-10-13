@@ -1,17 +1,38 @@
 ﻿<!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 	<script type="text/javascript">
 
 
 
 
       while (i < 10) {
+=======
+<head>
+    <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+
+
+<script type="text/javascript">
+
+ while (i < 10) {
+>>>>>>> accefd929cbc9ec5652f70291bac5dc890d6c694
           console.log("The number is " + i);
           i++;
       }
 
 
 
+<<<<<<< HEAD
 
 	</script>
 	<body>
@@ -41,3 +62,10 @@
 </body>
 </html>
 
+=======
+ </script>
+</head>
+<body>
+</body>
+</html>
+>>>>>>> accefd929cbc9ec5652f70291bac5dc890d6c694

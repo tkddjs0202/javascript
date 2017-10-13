@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 	<script type="text/javascript">
 
 
@@ -36,6 +37,31 @@
         <ul id="log" style="list-style-type:circle"></ul>
     </div>    
 
+=======
+<head>
+    <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+
+
+<script type="text/javascript">
+
+var age;
+       console.log(age); // undefined
+       age = 10;
+       console.log(age); // 10  
+ </script>
+</head>
+<body>
+>>>>>>> accefd929cbc9ec5652f70291bac5dc890d6c694
 </body>
 </html>
 
