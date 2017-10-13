@@ -1,8 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <script type="text/javascript">
-      var greeting;
+	<script type="text/javascript">
+
+
+
+
+          var greeting;
       var time = 12;
 
       if (time < 10) {
@@ -13,8 +16,43 @@
           greeting = "Good evening";
       }
       console.log(greeting);
-    </script>
-</head>
-<body>
+
+
+
+
+	</script>
+	<body>
+<div>
+<textarea cols = "100" rows="40">
+
+
+
+
+            var greeting;
+      var time = 12;
+
+      if (time < 10) {
+          greeting = "Good morning";
+      } else if (time < 20) {
+          greeting = "Good day";
+      } else {
+          greeting = "Good evening";
+      }
+      console.log(greeting);
+
+
+
+
+
+</textarea>
+</div>
+    <div>
+        <input type="button" id="run" value="실행"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>    
+
 </body>
 </html>
+
